@@ -1,0 +1,64 @@
+<html lang="en">
+    <head>
+<style>
+    div{
+        background-color: rgb(156, 207, 207);
+        border: 15px solid rgb(9, 26, 9);
+  padding: 50px;
+  margin: 20px;
+    }
+    p{
+        border:15px solid black;
+        padding: 50px;
+        margin: 20px;
+
+    }
+</style>
+    </head>
+    <body>
+        <div>
+            <input type="number" name="v1" id="1">
+            <input type="number" name="v2" id="2">
+            
+            <h1>Got the answer</h1>
+       
+            <p id="p" style="background-color: beige;">
+
+            </p>
+           
+            <button type="button" onclick="add()">ADD</button>
+            <button type="button" onclick="sub()">SUB</button>
+            <button type="button" onclick="mul()">MUL</button>
+            <button type="button" onclick="div()">DIV</button>
+        </div>
+    </body>
+    <script>
+        let x,y;
+        x=document.getElementById("1")
+        y=document.getElementById("2")
+       
+        console.log(x.value)
+        function add()
+        {
+            let sum=parseInt(x.value)+parseInt(y.value)
+            document.getElementById("p").innerHTML=sum;
+           
+        }
+        function sub()
+        {
+            let diff=parseInt(x.value)-parseInt(y.value)
+            document.getElementById("p").innerHTML=diff;
+        }
+        function mul()
+        {
+            let multi=parseInt(x.value)*parseInt(y.value)
+            document.getElementById("p").innerHTML=multi;
+        }
+        function div()
+        {
+            let divi=parseInt(x.value)/parseInt(y.value)
+            document.getElementById("p")
+        }
+
+    </script>
+</html>
